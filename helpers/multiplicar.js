@@ -2,7 +2,7 @@ const fs = require('fs');
 var colors = require('colors')
 
 const crearArchivo = async (base = 5, mostrar=false, limite=10) =>{
-console.log(base,mostrar, limite);
+
     try{
         let salida = [...Array(limite+1).keys()].splice(1).map( n => `${base} x ${n} = ${base * (n)}`).join("\n")
 
